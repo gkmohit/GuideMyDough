@@ -5,12 +5,15 @@
     <color name="app_button_color">#D63C3C</color>
     <color name="app_button_text">#FFF</color>
     <color name="app_text_color">#FFF</color>
+    <color name="app_hint_text_color">#D8D8D8</color>
     <color name="app_hr_color">#6C0000</color>
     <color name="app_background_color">#B71C1C</color>
     <color name="github_button_color">#666666</color>
     <color name="google_plus_button_color">#EC431C</color>
     <color name="facebook_button_color">#3B519C</color>
     <color name="twitter_button_color">#308EFF</color>
+    <color name="app_list_view_background_color">#FFF</color>
+    <color name="app_list_view_text_color">#B71C1C</color>
 
     <!--This is for font awesome-->
     <string name="fa_glass">&#xf000;</string>
@@ -610,9 +613,11 @@
     <string name="title_activity_home_page">Home Page</string>
     <string name="title_activity_no_internet">No Internet Connection</string>
 
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section3">Section 3</string>
+    <string name="title_section1">Balance</string>
+    <string name="title_section2">SCOTTY</string>
+    <string name="title_section3">Goals</string>
     <string name="title_activity_sign_in">Sign In</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="title_activity_balance">Balance</string>
 </resources>
 

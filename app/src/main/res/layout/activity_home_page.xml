@@ -1,16 +1,79 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                tools:context=".HomePage">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".HomePage"
+    android:background="@color/app_background_color"
+    >
 
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/cardNumberEditText"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:height="@dimen/app_edit_text_padding"
+        android:layout_marginTop="150dp"
+        android:textColor="@color/app_text_color"
+        android:textColorHint="@color/app_hint_text_color"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/passwordEditText"
+        android:ems="10"
+        android:height="@dimen/app_edit_text_padding"
+        android:layout_below="@+id/cardNumberEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/app_text_color"
+        android:textColorHint="@color/app_hint_text_color"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:id="@+id/signInButton"
+        android:textColor="@color/app_text_color"
+        android:textSize="@dimen/app_button_text_size"
+        android:background="@drawable/rounded_button"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"/>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scotiaBankImage"
+        android:src="@drawable/scotiabank_logo"
+        android:layout_above="@+id/passwordEditText" android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" android:layout_marginBottom="82dp"/>
     <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/bottomTextView"
+        android:textColor="@color/app_text_color"
+        android:textSize="@dimen/app_small_text_size"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Assign some text"
+        android:id="@+id/errorTextView"
+        android:layout_below="@+id/passwordEditText"
+        android:textColor="@color/app_text_color"
+        android:layout_marginTop="15dp"
+        android:textSize="@dimen/app_small_text_size"
+        android:layout_centerHorizontal="true"/>
+
 
 </RelativeLayout>
