@@ -45,7 +45,7 @@
                 android:textSize="@dimen/app_small_text_size"
                 android:textColor="@color/app_text_color"
                 android:paddingLeft="5dp"
-                android:text="Car Loan Downpayment\n\n\n97% : $20940 / $21000\n\nYou are almost there. Just $60 to go.\n"
+                android:text="Car Loan Payment\n\n\n97% : $20,940 / $21,000\n\nYou are almost there. Just $60 to go.\n"
                 android:layout_weight="1"/>
         </LinearLayout>
     </LinearLayout>
@@ -83,7 +83,7 @@
                 android:textSize="@dimen/app_small_text_size"
                 android:textColor="@color/app_text_color"
                 android:paddingLeft="5dp"
-                android:text="Visit Grandparents in Italy\n\n\n47% : $2350 / 5000\n\n $2650 to go.\n"
+                android:text="Visit Grandparents in Italy\n\n\n47% : $2,350 / 5000\n\n $2,650 to go.\n"
                 android:layout_weight="1"/>
         </LinearLayout>
     </LinearLayout>
@@ -121,7 +121,7 @@
                 android:textSize="@dimen/app_small_text_size"
                 android:textColor="@color/app_text_color"
                 android:paddingLeft="5dp"
-                android:text="Home Loan Downpayment\n\n\n7% : $940 / 89060\n\n $60 to go.\n"
+                android:text="Home Loan Downpayment\n\n\n7% : $940 / 89,060\n\n $88,120 to go.\n"
                 android:layout_weight="1"/>
         </LinearLayout>
     </LinearLayout>

@@ -36,11 +36,11 @@ public class ScottyActvity extends AppCompatActivity {
         mWeeklyPlanButton.setTypeface(font);
         mMonthlyPlanButton.setTypeface(font);
 
-        mDailyPlanButton.setText(getResources().getString(R.string.fa_newspaper_o) + "\n\nDaily Plan");
+        mDailyPlanButton.setText(getResources().getString(R.string.fa_newspaper_o) + "\nDaily Budget : " + DailyPlan.dailyBudget);
         mWeeklyPlanButton.setText(getResources().getString(R.string.fa_calendar) + "\n" +
-                "\nWeekly Plan");
+                "\nWeekly Budget : 400$");
         mMonthlyPlanButton.setText(getResources().getString(R.string.fa_calendar_o) + "\n" +
-                "\nMonthly Plan");
+                "\nMonthly Budget : $1,401");
 
         mDailyPlanButton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -67,6 +67,8 @@ public class HomePage extends AppCompatActivity {
                 } else {
                     mErrorTextView.setText("Enter your card number and password");
                     mErrorTextView.setVisibility(View.VISIBLE);
+                    mCardNumberEditText.setText("5555555555555555");
+                    mPasswordEditText.setText("qweqweqwewqe");
                 }
             }
         });

@@ -43,7 +43,7 @@ public class DailyPlanGas extends AppCompatActivity {
         mBudgetTextTextView.setTypeface(font);
         mDirectionsButton5.setTypeface(font);
 
-        mBudgetTextTextView.setText(getResources().getString(R.string.fa_car) + "\n\nBreakfast Budget");
+        mBudgetTextTextView.setText(getResources().getString(R.string.fa_car) + "\n\nTravel Budget");
 
         mBudgetAmountTextView.setText("$" + 18 + " of $" + dailyBudget);
 
