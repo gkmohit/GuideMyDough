@@ -13,6 +13,7 @@ import com.mohitkishore.guidemydough.R;
 
 import java.util.Locale;
 
+import Static.Numbers;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
@@ -30,7 +31,6 @@ public class DailyPlanGas extends AppCompatActivity {
     @Bind(R.id.doneButton)
     Button mDoneButton;
 
-    public static int dailyBudget = DailyPlan.dailyBudget;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +45,7 @@ public class DailyPlanGas extends AppCompatActivity {
 
         mBudgetTextTextView.setText(getResources().getString(R.string.fa_car) + "\n\nTravel Budget");
 
-        mBudgetAmountTextView.setText("$" + 18 + " of $" + dailyBudget);
+        mBudgetAmountTextView.setText("$" + 18 + " of $" + Numbers.dailyBudget);
 
         mDirectionsButton5.setText(getResources().getString(R.string.fa_map_marker) + "  Directions >>");
 
@@ -56,7 +56,7 @@ public class DailyPlanGas extends AppCompatActivity {
             public void onClick(View v) {
 
                 int cost = 18 - 5;
-                dailyBudget = dailyBudget - cost;
+                Numbers.dailyBudget = Numbers.dailyBudget - cost;
                 double destinationLatitude = 44.108642;
                 double destinationLongitude = -79.124247;
                 double sourceLatitude = 43.768778;

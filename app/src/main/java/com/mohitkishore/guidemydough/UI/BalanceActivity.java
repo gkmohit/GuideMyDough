@@ -16,13 +16,11 @@ public class BalanceActivity extends AppCompatActivity {
 
     @Bind(R.id.accountListViews)
     ListView mAccountListViews;
-
-    @Bind(R.id.accountInformationListView)
-    ListView mAccountInformationListViews;
+    
 
     private ArrayAdapter mArrayAdapter = null;
     private ArrayList mArrayList = new ArrayList();
-    private String[] accountNames = {"Student Banking Advantage Plans", "Money Master", "Scene VISA Card"};
+    private String[] accountNames = {"Banking Advantage Plans - $300", "Money Master - $3452", "Scene VISA Card - $3223"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import com.mohitkishore.guidemydough.R;
 
+import Static.Numbers;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
@@ -24,6 +25,7 @@ public class ScottyActvity extends AppCompatActivity {
     @Bind(R.id.monthlyPlanButton)
     Button mMonthlyPlanButton;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,11 +38,11 @@ public class ScottyActvity extends AppCompatActivity {
         mWeeklyPlanButton.setTypeface(font);
         mMonthlyPlanButton.setTypeface(font);
 
-        mDailyPlanButton.setText(getResources().getString(R.string.fa_newspaper_o) + "\nDaily Budget : " + DailyPlan.dailyBudget);
+        mDailyPlanButton.setText(getResources().getString(R.string.fa_newspaper_o) + "\nDaily Budget : $" + Numbers.dailyBudget);
         mWeeklyPlanButton.setText(getResources().getString(R.string.fa_calendar) + "\n" +
-                "\nWeekly Budget : 400$");
+                "\nWeekly Budget : $" + Numbers.weekly);
         mMonthlyPlanButton.setText(getResources().getString(R.string.fa_calendar_o) + "\n" +
-                "\nMonthly Budget : $1,401");
+                "\nMonthly Budget : $" +Numbers.monthly);
 
         mDailyPlanButton.setOnClickListener(new View.OnClickListener() {
             @Override

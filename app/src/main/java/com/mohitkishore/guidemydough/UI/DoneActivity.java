@@ -1,5 +1,6 @@
 package com.mohitkishore.guidemydough.UI;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
@@ -27,4 +28,10 @@ public class DoneActivity extends AppCompatActivity {
         writer.animateText(mYayText.getText().toString());
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(DoneActivity.this, Dashboard.class);
+        startActivity(intent);
+    }
 }

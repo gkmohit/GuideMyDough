@@ -50,7 +50,7 @@
             android:layout_weight="1"
             android:textSize="@dimen/app_small_text_size"
             android:textColor="@color/app_text_color"
-            android:text="Buy Grocieries\n\nSave $8\n\nClosest grocery store is 2.5 km away."
+            android:text="Buy Groceries\n\nSave $8\n\nClosest grocery store is 2.5 km away."
             />
         <Button
             android:layout_width="match_parent"

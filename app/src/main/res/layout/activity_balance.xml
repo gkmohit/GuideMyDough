@@ -10,14 +10,10 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.mohitkishore.guidemydough.UI.BalanceActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:weightSum="2"
-        android:orientation="vertical">
+
         <ListView
             android:id="@+id/accountListViews"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
@@ -25,22 +21,4 @@
             android:textColor="@color/app_list_view_text_color"
             android:layout_weight="1"
             />
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="10dp"
-            android:background="@color/app_hr_color"
-            android:layout_below="@+id/signUpTextView"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:id="@+id/hr_line"/>
-        <ListView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/app_list_view_background_color"
-            android:textColor="@color/app_list_view_text_color"
-            android:layout_weight="2"
-            android:id="@+id/accountInformationListView">
-
-        </ListView>
-    </LinearLayout>
 </RelativeLayout>

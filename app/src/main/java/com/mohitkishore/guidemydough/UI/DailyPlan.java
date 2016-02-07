@@ -10,12 +10,13 @@ import android.widget.TextView;
 
 import com.mohitkishore.guidemydough.R;
 
+import Static.Numbers;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class DailyPlan extends AppCompatActivity {
 
-    public static int dailyBudget = 45;
+
 
 
     @Bind(R.id.budgetTextTextView)
@@ -51,7 +52,9 @@ public class DailyPlan extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int cost = 14 - 8;
-                dailyBudget = dailyBudget - cost;
+                Numbers.monthly -= cost;
+                Numbers.weekly -= cost;
+                Numbers.dailyBudget = Numbers.dailyBudget - cost;
                 Intent intent = new Intent(DailyPlan.this, DailyPlanGas.class);
                 startActivity(intent);
                 finish();
@@ -62,7 +65,9 @@ public class DailyPlan extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int cost = 14 - 3;
-                dailyBudget = dailyBudget - cost;
+                Numbers.dailyBudget = Numbers.dailyBudget - cost;
+                Numbers.monthly -= cost;
+                Numbers.weekly -= cost;
                 Intent intent = new Intent(DailyPlan.this, DailyPlanGas.class);
                 startActivity(intent);
                 finish();
@@ -73,7 +78,9 @@ public class DailyPlan extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int cost = 14 - 14;
-                dailyBudget = dailyBudget - cost;
+                Numbers.dailyBudget = Numbers.dailyBudget - cost;
+                Numbers.monthly -= cost;
+                Numbers.weekly -= cost;
                 Intent intent = new Intent(DailyPlan.this, DailyPlanGas.class);
                 startActivity(intent);
                 finish();

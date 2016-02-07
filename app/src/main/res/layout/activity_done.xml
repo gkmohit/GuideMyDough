@@ -22,9 +22,9 @@
             android:layout_height="match_parent"
             android:id="@+id/yayText"
             android:textColor="@color/app_text_color"
-            android:textSize="@dimen/app_text_size"
-            android:text="Congragula†ions Sam and Sara. You have paid $21,000."
-            android:gravity="center"
+            android:textSize="25dp"
+            android:text="Congratulations Sam and Sara\nYou have successfully completed your goal of paying off your $21,000 auto loan."
+
             android:layout_weight="2"/>
         <LinearLayout
             android:layout_width="match_parent"
