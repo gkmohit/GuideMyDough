@@ -623,5 +623,6 @@
     <string name="title_activity_progress">Progress</string>
     <string name="title_activity_daily_plan">Daily Plan</string>
     <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_daily_plan_gas">DailyPlanGas</string>
 </resources>
 

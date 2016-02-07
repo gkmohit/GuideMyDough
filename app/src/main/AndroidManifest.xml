@@ -49,6 +49,10 @@
             android:label="@string/title_activity_settings"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name=".UI.DailyPlanGas"
+            android:label="@string/title_activity_daily_plan_gas" >
+        </activity>
     </application>
 
 </manifest>

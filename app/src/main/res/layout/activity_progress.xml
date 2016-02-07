@@ -83,7 +83,7 @@
                 android:textSize="@dimen/app_small_text_size"
                 android:textColor="@color/app_text_color"
                 android:paddingLeft="5dp"
-                android:text="Trip to Cancun\n\n\n47% : $2350 / 5000\n\n $2650 to go.\n"
+                android:text="Visit Grandparents in Italy\n\n\n47% : $2350 / 5000\n\n $2650 to go.\n"
                 android:layout_weight="1"/>
         </LinearLayout>
     </LinearLayout>

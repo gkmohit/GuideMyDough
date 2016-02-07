@@ -1,0 +1,73 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="4"
+    android:background="@color/app_background_color"
+    android:orientation="vertical"
+    tools:context="com.mohitkishore.guidemydough.UI.DailyPlan" android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Breakfast Budget"
+                android:textSize="@dimen/app_small_text_size"
+                android:textColor="@color/app_text_color"
+                android:gravity="center"
+                android:id="@+id/budgetTextTextView" android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="New Text"
+                android:textSize="@dimen/app_text_size"
+                android:gravity="center"
+                android:textColor="@color/app_text_color"
+                android:id="@+id/budgetAmountTextView"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/app_small_text_size"
+            android:textColor="@color/app_text_color"
+            android:text="Cheapest Gas\n\nSave $5\n\nGas prices are around 0.84 near your appointment at 1:00 PM.\n"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/app_small_text_size"
+            android:text="select"
+            android:id="@+id/directionsButton5"
+            android:background="@drawable/rounded_button"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+    </LinearLayout>
+
+
+</LinearLayout>
