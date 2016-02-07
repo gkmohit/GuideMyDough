@@ -622,5 +622,6 @@
     <string name="title_activity_scotty_actvity">Scotty Actvity</string>
     <string name="title_activity_progress">Progress</string>
     <string name="title_activity_daily_plan">Daily Plan</string>
+    <string name="title_activity_settings">SettingsActivity</string>
 </resources>
 

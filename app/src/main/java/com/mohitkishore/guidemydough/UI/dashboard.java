@@ -24,7 +24,7 @@ public class Dashboard extends AppCompatActivity {
     Button mScottyButton;
 
     @Bind(R.id.profileButton)
-    Button mProfileButton;
+    Button mSettingsButton;
 
 
     @Override
@@ -38,7 +38,7 @@ public class Dashboard extends AppCompatActivity {
         mBalanceButton.setTypeface(font);
         mProgressButton.setTypeface(font);
         mScottyButton.setTypeface(font);
-        mProfileButton.setTypeface(font);
+        mSettingsButton.setTypeface(font);
 
 
         mBalanceButton.setText(getResources().getString(R.string.fa_money) + "\n\nBALANCE");
@@ -49,7 +49,7 @@ public class Dashboard extends AppCompatActivity {
         mScottyButton.setText(getResources().getString(R.string.fa_user_secret) + "\n" +
                 "\nSCOTTY'S PLAN");
 
-        mProfileButton.setText(getResources().getString(R.string.fa_gears) + "\n" +
+        mSettingsButton.setText(getResources().getString(R.string.fa_gears) + "\n" +
                 "\nSETTINGS");
 
 
@@ -75,6 +75,13 @@ public class Dashboard extends AppCompatActivity {
             public void onClick(View v) {
                 Intent progress = new Intent(Dashboard.this, ProgressActivity.class);
                 Dashboard.this.startActivity(progress);
+            }
+        });
+        mSettingsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent settings = new Intent(Dashboard.this, SettingsActivity.class);
+                Dashboard.this.startActivity(settings);
             }
         });
     }
