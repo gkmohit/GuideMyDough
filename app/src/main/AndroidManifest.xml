@@ -27,7 +27,22 @@
         <activity
             android:name=".UI.BalanceActivity"
             android:label="@string/title_activity_balance"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".UI.ScottyActvity"
+            android:label="@string/title_activity_scotty_actvity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".UI.ProgressActivity"
+            android:label="@string/title_activity_progress"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".UI.DailyPlan"
+            android:label="@string/title_activity_daily_plan"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 

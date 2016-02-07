@@ -17,8 +17,8 @@ public class Dashboard extends AppCompatActivity {
     @Bind(R.id.balanceButton)
     Button mBalanceButton;
 
-    @Bind(R.id.goalsButton)
-    Button mGoalsButton;
+    @Bind(R.id.progressButton)
+    Button mProgressButton;
 
     @Bind(R.id.scottyButton)
     Button mScottyButton;
@@ -26,8 +26,6 @@ public class Dashboard extends AppCompatActivity {
     @Bind(R.id.profileButton)
     Button mProfileButton;
 
-    @Bind(R.id.helpButton)
-    Button mHelpButtons;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,26 +36,45 @@ public class Dashboard extends AppCompatActivity {
         ButterKnife.bind(this); //Butter knife
 
         mBalanceButton.setTypeface(font);
-        mGoalsButton.setTypeface(font);
+        mProgressButton.setTypeface(font);
         mScottyButton.setTypeface(font);
         mProfileButton.setTypeface(font);
-        mHelpButtons.setTypeface(font);
+
 
         mBalanceButton.setText(getResources().getString(R.string.fa_money) + "\n\nBALANCE");
-        mGoalsButton.setText(getResources().getString(R.string.fa_line_chart) + "\n" +
-                "\nGROWTH");
+
+        mProgressButton.setText(getResources().getString(R.string.fa_line_chart) + "\n" +
+                "\nPROGRESS");
+
         mScottyButton.setText(getResources().getString(R.string.fa_user_secret) + "\n" +
-                "\nSCOTTY");
-        mProfileButton.setText(getResources().getString(R.string.fa_user) + "\n" +
-                "\nPROFILE");
-        mHelpButtons.setText(getResources().getString(R.string.fa_life_saver) + "\n" +
-                "\nHELP");
+                "\nSCOTTY'S PLAN");
+
+        mProfileButton.setText(getResources().getString(R.string.fa_gears) + "\n" +
+                "\nSETTINGS");
+
+
 
         mBalanceButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent dashboard = new Intent(Dashboard.this, BalanceActivity.class);
                 Dashboard.this.startActivity(dashboard);
+            }
+        });
+
+        mScottyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent dashboard = new Intent(Dashboard.this, ScottyActvity.class);
+                Dashboard.this.startActivity(dashboard);
+            }
+        });
+
+        mProgressButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent progress = new Intent(Dashboard.this, ProgressActivity.class);
+                Dashboard.this.startActivity(progress);
             }
         });
     }

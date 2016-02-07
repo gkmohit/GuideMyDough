@@ -23,69 +23,58 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:weightSum="2">
+            android:weightSum="2" android:layout_marginBottom="5dp">
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#D32F2F"
-                android:gravity="center"
-                android:textSize="@dimen/app_button_text_size"
-                android:textColor="@color/app_text_color"
-                android:id="@+id/balanceButton"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#E53935"
-                android:gravity="center"
-                android:textSize="@dimen/app_button_text_size"
-                android:textColor="@color/app_text_color"
-                android:id="@+id/goalsButton"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:weightSum="2">
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:background="#F44336"
-                android:gravity="center"
-                android:textSize="@dimen/app_button_text_size"
-                android:textColor="@color/app_text_color"
-                android:id="@+id/scottyButton"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:weightSum="2">
-            <Button
+                android:id="@+id/balanceButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#EF5350"
                 android:gravity="center"
-                android:textSize="@dimen/app_button_text_size"
                 android:textColor="@color/app_text_color"
-                android:id="@+id/profileButton"/>
+                android:textSize="@dimen/app_button_text_size" android:layout_marginRight="3dp"/>
             <Button
+                android:id="@+id/progressButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#E57373"
+                android:gravity="center"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/app_button_text_size"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/scottyButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#EF9A9A"
                 android:gravity="center"
-                android:textSize="@dimen/app_button_text_size"
                 android:textColor="@color/app_text_color"
-                android:id="@+id/helpButton"/>
-
+                android:textSize="@dimen/app_button_text_size" android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/profileButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFCDD2"
+                android:gravity="center"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/app_button_text_size"/>
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
