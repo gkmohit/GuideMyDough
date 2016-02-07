@@ -63,6 +63,7 @@ public class HomePage extends AppCompatActivity {
                 if (cardNumber.length() > 0 && password.length() > 0) {
                     Intent dashboard = new Intent(HomePage.this, Dashboard.class);
                     HomePage.this.startActivity(dashboard);
+                    finish();
                 } else {
                     mErrorTextView.setText("Enter your card number and password");
                     mErrorTextView.setVisibility(View.VISIBLE);

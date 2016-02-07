@@ -45,7 +45,7 @@
                 android:textSize="@dimen/app_small_text_size"
                 android:textColor="@color/app_text_color"
                 android:paddingLeft="5dp"
-                android:text="Car Loan Downpayment\n\n\n97% : $20940 / $21000\n\nYou are almost there Sam. Just $60 to go.\n"
+                android:text="Car Loan Downpayment\n\n\n97% : $20940 / $21000\n\nYou are almost there. Just $60 to go.\n"
                 android:layout_weight="1"/>
         </LinearLayout>
     </LinearLayout>
