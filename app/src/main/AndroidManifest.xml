@@ -51,7 +51,13 @@
         </activity>
         <activity
             android:name=".UI.DailyPlanGas"
-            android:label="@string/title_activity_daily_plan_gas" >
+            android:label="@string/title_activity_daily_plan_gas"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".UI.DoneActivity"
+            android:label="@string/title_activity_done"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 

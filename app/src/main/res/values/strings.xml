@@ -624,5 +624,6 @@
     <string name="title_activity_daily_plan">Daily Plan</string>
     <string name="title_activity_settings">SettingsActivity</string>
     <string name="title_activity_daily_plan_gas">DailyPlanGas</string>
+    <string name="title_activity_done">DoneActivity</string>
 </resources>
 

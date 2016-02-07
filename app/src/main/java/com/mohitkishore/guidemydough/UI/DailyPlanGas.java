@@ -27,6 +27,9 @@ public class DailyPlanGas extends AppCompatActivity {
     @Bind(R.id.directionsButton5)
     Button mDirectionsButton5;
 
+    @Bind(R.id.doneButton)
+    Button mDoneButton;
+
     public static int dailyBudget = DailyPlan.dailyBudget;
 
     @Override
@@ -46,6 +49,8 @@ public class DailyPlanGas extends AppCompatActivity {
 
         mDirectionsButton5.setText(getResources().getString(R.string.fa_map_marker) + "  Directions >>");
 
+        mDoneButton.setVisibility(View.INVISIBLE);
+
         mDirectionsButton5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,17 +64,22 @@ public class DailyPlanGas extends AppCompatActivity {
                 String uri = String.format(Locale.ENGLISH, "http://maps.google.com/maps?saddr=%f,%f&daddr=%f,%f", sourceLatitude, sourceLongitude, destinationLatitude, destinationLongitude);
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
                 intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK & Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
                 startActivity(intent);
+                mDoneButton.setVisibility(View.VISIBLE);
             }
         });
+
+        mDoneButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DailyPlanGas.this, DoneActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
     }
 
-//
-//    @Override
-//    protected void () {
-//        super.onResume();
-//        Intent intent = new Intent(DailyPlanGas.this, Dashboard.class);
-//        startActivity(intent);
-//        finish();
-//    }
+
 }

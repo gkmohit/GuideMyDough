@@ -43,7 +43,7 @@ public class DailyPlan extends AppCompatActivity {
 
         mBudgetTextTextView.setTypeface(font);
 
-        mBudgetTextTextView.setText(getResources().getString(R.string.fa_cutlery) + "\n\nBreakfast Budget");
+        mBudgetTextTextView.setText(getResources().getString(R.string.fa_cutlery) + "\nBreakfast Budget");
 
         mBudgetAmountTextView.setText("$" + 14 + " of $" + dailyBudget);
 
