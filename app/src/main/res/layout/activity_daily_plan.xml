@@ -12,14 +12,6 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         >
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="@dimen/app_small_text_size"
-            android:textColor="@color/app_text_color"
-            android:id="@+id/breakfastTextView"
-            android:text="Some text here."/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -41,8 +33,10 @@
                 android:layout_height="match_parent"
                 android:text="New Text"
                 android:textSize="@dimen/app_text_size"
+                android:gravity="center"
                 android:textColor="@color/app_text_color"
-                android:id="@+id/budgetAmountTextView" android:layout_weight="1"/>
+                android:id="@+id/budgetAmountTextView"
+                android:layout_weight="1"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -53,11 +47,20 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
-        <TextView
+            android:layout_weight="1"
+            android:textSize="@dimen/app_small_text_size"
+            android:textColor="@color/app_text_color"
+            android:text="Buy Grocieries\n\nSave $8\n\nClosest grocery store is 2.5 km away."
+            />
+        <Button
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/app_small_text_size"
+            android:text="select"
+            android:id="@+id/groceryStoreButton8"
+            android:background="@drawable/rounded_button"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -67,11 +70,20 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
-        <TextView
+            android:layout_weight="1"
+            android:textSize="@dimen/app_small_text_size"
+            android:textColor="@color/app_text_color"
+            android:text="Tim Hortons\n\nSave $3\n\nClosest Tim Hortons is 1.5 km away."
+            />
+        <Button
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/app_small_text_size"
+            android:text="select"
+            android:id="@+id/timHortonsButtons3"
+            android:background="@drawable/rounded_button"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -81,11 +93,20 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
-        <TextView
+            android:layout_weight="1"
+            android:textSize="@dimen/app_small_text_size"
+            android:textColor="@color/app_text_color"
+            android:text="Buy Denny's\n\nSave $0\n\nClosest Denny's store is 6.3 km away."
+            />
+        <Button
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/app_small_text_size"
+            android:text="select"
+            android:id="@+id/dennysButtons0"
+            android:background="@drawable/rounded_button"/>
     </LinearLayout>
 
 </LinearLayout>
