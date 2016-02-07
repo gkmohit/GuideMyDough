@@ -46,7 +46,7 @@ public class DailyPlan extends AppCompatActivity {
 
         mBudgetTextTextView.setText(getResources().getString(R.string.fa_cutlery) + "\nBreakfast Budget");
 
-        mBudgetAmountTextView.setText("$" + 14 + " of daily budget");
+        mBudgetAmountTextView.setText("$" + 14 + " out of $" + Numbers.dailyBudget + " daily budget");
 
         mGroceryStoreButton8.setOnClickListener(new View.OnClickListener() {
             @Override

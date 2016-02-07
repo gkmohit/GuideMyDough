@@ -45,7 +45,7 @@ public class DailyPlanGas extends AppCompatActivity {
 
         mBudgetTextTextView.setText(getResources().getString(R.string.fa_car) + "\n\nTravel Budget");
 
-        mBudgetAmountTextView.setText("$" + 18 + " of $" + Numbers.dailyBudget);
+        mBudgetAmountTextView.setText("$" + 18 + " out of $" + Numbers.dailyBudget + " daily budget");
 
         mDirectionsButton5.setText(getResources().getString(R.string.fa_map_marker) + "  Directions >>");
 
